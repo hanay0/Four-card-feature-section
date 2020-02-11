@@ -1,0 +1,132 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+}
+
+.titles{
+    text-align:center;
+    padding-top: 70px;
+}
+.titles h1{
+    font-weight: 200;
+    margin:0;
+    color: color: hsl(229, 6%, 66%);
+}
+
+.titles h2{
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+    letter-spacing: .06rem;
+    color: hsl(234, 12%, 34%)
+}
+
+.titles p{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+
+.big-container{
+  margin: 0 auto;
+  width:1440px;
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+
+.big-container .centered{
+  height:600px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly;
+}
+
+.big-container h3{
+    color: hsl(234, 12%, 34%);
+}
+
+.big-container p{
+    color:hsl(229, 6%, 66%);
+}
+
+.big-container div{
+  width:345px;
+  height:245px;
+  margin:0 20px;
+  padding: 20px 20px 0 30px;
+    border-radius: 8px;
+    position: relative
+}
+
+.big-container div img{
+    position:absolute;
+    right: 40px;
+}
+
+.big-container .first,
+.big-container .second,
+.big-container .third,
+.big-container .forth{
+  
+  -webkit-box-shadow: -4px 2px 15px 2px rgba(0,0,0,0.37);
+  -moz-box-shadow: -4px 2px 15px 2px rgba(0,0,0,0.37);
+       box-shadow: -4px 2px 15px 2px rgba(0,0,0,0.37);
+}
+
+
+.big-container .first{
+  border-top: 4px solid hsl(180, 62%, 55%);
+
+}
+
+.big-container .second{
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.big-container .third{
+  border-top: 4px solid hsl(34, 97%, 64%);
+ 
+}
+
+.big-container .forth{
+  border-top: 4px solid hsl(212, 86%, 64%);
+  
+}
+
+
+/*media query for mobile design*/
+
+
+@media (max-width: 800px){
+    
+    .big-container{
+        width: 500px;
+        margin: 0;
+        display:flex;
+        align-items: flex-start;
+        justify-content:flex-start;
+        flex-direction: column
+    }
+    
+    .titles p{
+        width: 80%;
+        margin: 0 auto
+    }
+}
+
+@media (max-width: 1000px){
+    
+    .big-container{
+        width: 430px;
+        margin: 0 auto;
+        display:flex;
+        align-items: flex-start;
+        justify-content:flex-start;
+        flex-direction: column
+    }
+}
